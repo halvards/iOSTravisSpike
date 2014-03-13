@@ -18,7 +18,9 @@
 		6B45739218D16D1E00DB1B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B45737718D16D1D00DB1B62 /* Foundation.framework */; };
 		6B45739318D16D1E00DB1B62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B45737B18D16D1D00DB1B62 /* UIKit.framework */; };
 		6B45739B18D16D1E00DB1B62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B45739918D16D1E00DB1B62 /* InfoPlist.strings */; };
-		6B45739D18D16D1E00DB1B62 /* iOSTravisSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B45739C18D16D1E00DB1B62 /* iOSTravisSpikeTests.m */; };
+		6B9BA63318D17D0400AE9E1C /* PetSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BA63218D17D0400AE9E1C /* PetSpec.m */; };
+		6B9BA63718D1823300AE9E1C /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BA63618D1823300AE9E1C /* Pet.m */; };
+		922A9BEA80234438B5DD4EEF /* libPods-iOSTravisSpikeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF5A2048B546D5A6BCF10F /* libPods-iOSTravisSpikeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A28DD12D8545CDB7433BBB /* Pods-iOSTravisSpikeTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTravisSpikeTests.xcconfig"; path = "Pods/Pods-iOSTravisSpikeTests.xcconfig"; sourceTree = "<group>"; };
+		45EF5A2048B546D5A6BCF10F /* libPods-iOSTravisSpikeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSTravisSpikeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B45737418D16D1D00DB1B62 /* iOSTravisSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTravisSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B45737718D16D1D00DB1B62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B45737918D16D1D00DB1B62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +51,9 @@
 		6B45739018D16D1E00DB1B62 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6B45739818D16D1E00DB1B62 /* iOSTravisSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSTravisSpikeTests-Info.plist"; sourceTree = "<group>"; };
 		6B45739A18D16D1E00DB1B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6B45739C18D16D1E00DB1B62 /* iOSTravisSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTravisSpikeTests.m; sourceTree = "<group>"; };
+		6B9BA63218D17D0400AE9E1C /* PetSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetSpec.m; sourceTree = "<group>"; };
+		6B9BA63518D1823300AE9E1C /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pet.h; path = Model/Pet.h; sourceTree = "<group>"; };
+		6B9BA63618D1823300AE9E1C /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pet.m; path = Model/Pet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				6B45739118D16D1E00DB1B62 /* XCTest.framework in Frameworks */,
 				6B45739318D16D1E00DB1B62 /* UIKit.framework in Frameworks */,
 				6B45739218D16D1E00DB1B62 /* Foundation.framework in Frameworks */,
+				922A9BEA80234438B5DD4EEF /* libPods-iOSTravisSpikeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				6B45739618D16D1E00DB1B62 /* iOSTravisSpikeTests */,
 				6B45737618D16D1D00DB1B62 /* Frameworks */,
 				6B45737518D16D1D00DB1B62 /* Products */,
+				16A28DD12D8545CDB7433BBB /* Pods-iOSTravisSpikeTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +108,7 @@
 				6B45737918D16D1D00DB1B62 /* CoreGraphics.framework */,
 				6B45737B18D16D1D00DB1B62 /* UIKit.framework */,
 				6B45739018D16D1E00DB1B62 /* XCTest.framework */,
+				45EF5A2048B546D5A6BCF10F /* libPods-iOSTravisSpikeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +116,7 @@
 		6B45737D18D16D1D00DB1B62 /* iOSTravisSpike */ = {
 			isa = PBXGroup;
 			children = (
+				6B9BA63418D1820F00AE9E1C /* Model */,
 				6B45738618D16D1E00DB1B62 /* AppDelegate.h */,
 				6B45738718D16D1E00DB1B62 /* AppDelegate.m */,
 				6B45738918D16D1E00DB1B62 /* Images.xcassets */,
@@ -129,7 +139,7 @@
 		6B45739618D16D1E00DB1B62 /* iOSTravisSpikeTests */ = {
 			isa = PBXGroup;
 			children = (
-				6B45739C18D16D1E00DB1B62 /* iOSTravisSpikeTests.m */,
+				6B9BA63818D1824300AE9E1C /* ModelSpecs */,
 				6B45739718D16D1E00DB1B62 /* Supporting Files */,
 			);
 			path = iOSTravisSpikeTests;
@@ -142,6 +152,23 @@
 				6B45739918D16D1E00DB1B62 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B9BA63418D1820F00AE9E1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B9BA63518D1823300AE9E1C /* Pet.h */,
+				6B9BA63618D1823300AE9E1C /* Pet.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B9BA63818D1824300AE9E1C /* ModelSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				6B9BA63218D17D0400AE9E1C /* PetSpec.m */,
+			);
+			name = ModelSpecs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B4573A318D16D1E00DB1B62 /* Build configuration list for PBXNativeTarget "iOSTravisSpikeTests" */;
 			buildPhases = (
+				151F21A7D7ED414B88CFAE7C /* Check Pods Manifest.lock */,
 				6B45738B18D16D1E00DB1B62 /* Sources */,
 				6B45738C18D16D1E00DB1B62 /* Frameworks */,
 				6B45738D18D16D1E00DB1B62 /* Resources */,
+				4A58DD756A4F42668ECE9BA7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,11 +263,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		151F21A7D7ED414B88CFAE7C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A58DD756A4F42668ECE9BA7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-iOSTravisSpikeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B45737018D16D1D00DB1B62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9BA63718D1823300AE9E1C /* Pet.m in Sources */,
 				6B45738818D16D1E00DB1B62 /* AppDelegate.m in Sources */,
 				6B45738418D16D1E00DB1B62 /* main.m in Sources */,
 			);
@@ -248,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B45739D18D16D1E00DB1B62 /* iOSTravisSpikeTests.m in Sources */,
+				6B9BA63318D17D0400AE9E1C /* PetSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +445,7 @@
 		};
 		6B4573A418D16D1E00DB1B62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A28DD12D8545CDB7433BBB /* Pods-iOSTravisSpikeTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSTravisSpike.app/iOSTravisSpike";
@@ -405,6 +469,7 @@
 		};
 		6B4573A518D16D1E00DB1B62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A28DD12D8545CDB7433BBB /* Pods-iOSTravisSpikeTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSTravisSpike.app/iOSTravisSpike";
@@ -441,6 +506,7 @@
 				6B4573A218D16D1E00DB1B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B4573A318D16D1E00DB1B62 /* Build configuration list for PBXNativeTarget "iOSTravisSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +515,7 @@
 				6B4573A518D16D1E00DB1B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
