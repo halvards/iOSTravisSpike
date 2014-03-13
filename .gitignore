@@ -9,12 +9,19 @@ build/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+*/xcuserdata/*
 *.xccheckout
-profile
 *.moved-aside
 DerivedData
 *.hmap
 *.ipa
+project.xcworkspace
+config.sh
+encrypt-key.sh
+*.cer
+*.p12
+*.mobileprovision
+
 
 # CocoaPods
 Pods

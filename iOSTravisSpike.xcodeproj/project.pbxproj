@@ -220,6 +220,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = mlam;
 				TargetAttributes = {
+					6B45737318D16D1D00DB1B62 = {
+						DevelopmentTeam = YFWXADMX4E;
+					};
 					6B45738E18D16D1E00DB1B62 = {
 						TestTargetID = 6B45737318D16D1D00DB1B62;
 					};
@@ -422,10 +425,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSTravisSpike/iOSTravisSpike-Prefix.pch";
 				INFOPLIST_FILE = "iOSTravisSpike/iOSTravisSpike-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,10 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSTravisSpike/iOSTravisSpike-Prefix.pch";
 				INFOPLIST_FILE = "iOSTravisSpike/iOSTravisSpike-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

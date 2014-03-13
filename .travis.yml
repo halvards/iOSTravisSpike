@@ -1,4 +1,20 @@
 language: objective-c
+cache: bundler
+before_install:
+- gem install cocoapods
+before_script:
+- ./scripts/travis/add-key.sh
+after_script:
+- ./scripts/travis/remove-key.sh
 script:
-  - xctool -workspace iOSTravisSpike.xcworkspace -scheme iOSTravisSpike -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace iOSTravisSpike.xcworkspace -scheme iOSTravisSpikeTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- rake unit
+- rake build
+- rake package_ad_hoc
+env:
+  global:
+  - APP_NAME="iOSTravisSpike"
+  - 'DEVELOPER_NAME="iPhone Developer: Mai Lam (EKS8G4GZUU)"'
+  - PROFILE_NAME="iOSTravisSpike"
+  - PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
+  - secure: xPJpDUiu9GLJ9BOGt6fu+3ebA44yKU98ZVwwqOhmFtXRkHarWaOZakoNRc42vw4h7SzTz8eN5ukKuyXJnaEi6p4ZkiIrjvNQtZJgXYnwABqUQX/1fONkBUmbHzraH5e8li5HboIfkrEHeCEdvxZnuku/l+SfzDPPy4jDl2ORt8g=
+  - secure: DfUucaYq2IrGj9I0Jr0c8iLbF5ztP+78C99GPVusMA2PQAIasf9g0u2CFa11Yryfd+Huf3xLPSYDx0PwhJhn96FOe5sx+7yipYzxgOwHdTnlVTTyjB963plj8+3bHgPFHn+2gMY0WFK8FPNhVfj8pAK/ecWd3ctbBOUliQ5wicc=
