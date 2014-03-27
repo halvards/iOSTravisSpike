@@ -21,7 +21,3 @@ encrypt-key.sh
 *.cer
 *.p12
 *.mobileprovision
-
-
-# CocoaPods
-Pods

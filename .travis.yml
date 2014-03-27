@@ -1,7 +1,7 @@
 language: objective-c
 cache: bundler
-before_install:
-- gem install cocoapods
+install:
+- bundle install
 before_script:
 - ./scripts/travis/add-key.sh
 after_script:
