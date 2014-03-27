@@ -4,17 +4,17 @@ task default: [:unit]
 
 desc 'Build xcode project'
 task :build do
-  xcb 'iOSTravisSpike', 'Debug', 'i386', 'iphonesimulator', 'build | xcpretty -c || exit 1'
+  xcb 'iOSTravisSpike', 'Debug', 'i386', 'iphonesimulator', 'build'
 end
 
 desc 'Run unit tests'
 task :unit do
-  xcb 'iOSTravisSpike', 'Debug', 'i386', 'iphonesimulator', 'clean test | xcpretty -c || exit 1'
+  xcb 'iOSTravisSpike', 'Debug', 'i386', 'iphonesimulator', 'clean test'
 end
 
 desc 'Package Ad Hoc Distribution File'
 task :package_ad_hoc do
-  xcb 'iOSTravisSpike', 'Release', 'i386', 'iphoneos', ' clean build | xcpretty -c || exit 1'
+  xcb 'iOSTravisSpike', 'Release', 'i386', 'iphoneos', ' clean build'
 
   sh '/usr/bin/xcrun -log -sdk iphoneos ' +
      'PackageApplication ' +
