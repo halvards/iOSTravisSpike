@@ -7,9 +7,7 @@ before_script:
 after_script:
 - ./scripts/travis/remove-key.sh
 script:
-- rake unit
-- rake build
-- rake package_ad_hoc
+- rake unit && rake build
 env:
   global:
   - APP_NAME="iOSTravisSpike"

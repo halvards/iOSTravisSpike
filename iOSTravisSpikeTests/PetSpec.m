@@ -24,7 +24,7 @@ describe(@"Pet", ^{
         });
         
         it(@"should have default name as 'No Name'", ^{
-            [[pet.name should] equal:@"No Name"];
+            [[pet.name should] equal:@"Blah"];
         });
     });
 });

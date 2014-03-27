@@ -14,7 +14,7 @@ end
 
 desc 'Package Ad Hoc Distribution File'
 task :package_ad_hoc do
-  xcb 'iOSTravisSpike', 'Release', 'i386', 'iphoneos', 'OBJROOT=$PWD/build SYMROOT=$PWD/build clean build | xcpretty -c'
+  xcb 'iOSTravisSpike', 'Release', 'i386', 'iphoneos', ' clean build | xcpretty -c'
 
   sh '/usr/bin/xcrun -log -sdk iphoneos ' +
      'PackageApplication ' +
@@ -31,9 +31,7 @@ def xcb scheme, configuration, arch, sdk, buildaction
      "-configuration #{configuration} " +
      "-scheme #{scheme} " +
      "-sdk #{sdk} " +
+     "-destination platform='iOS Simulator',OS=7.0,name='iPhone Retina (4-inch)' " +
+     "OBJROOT=$PWD/build SYMROOT=$PWD/build " +
      "#{buildaction}"
-end
-
-def xcrun
-
 end
