@@ -33,5 +33,5 @@ def xcb scheme, configuration, arch, sdk, buildaction
      "-sdk #{sdk} " +
      "-destination platform='iOS Simulator',OS=7.0,name='iPhone Retina (4-inch)' " +
      "OBJROOT=$PWD/build SYMROOT=$PWD/build " +
-     "#{buildaction}"
+     "#{buildaction} | xcpretty -c; exit ${PIPESTATUS[0]}"
 end
